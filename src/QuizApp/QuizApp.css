@@ -1,0 +1,19 @@
+.Container { 
+background: transparent;
+backdrop-filter: blur(5px);
+height: 340px;
+width:400px;
+position: relative;
+top: 200px;
+left:500px;
+border: 1px solid gray;
+border-radius: 8px;
+color: white;
+padding:10px;
+
+}
+body{
+    background-image: url("pic.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,8 @@
+.unknown{
+    color: blue;
+    background-color: orange;
+    display: inline-block;
+}
+.divCont{
+    background-image: linear-gradient(yellow,green,black);
+}

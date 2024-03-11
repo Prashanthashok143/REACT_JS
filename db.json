@@ -1,0 +1,46 @@
+{
+  "posts": [
+    {
+      "title": "hello",
+      "author": "eeeeeee",
+      "id": 1
+    }
+  ],
+  "comments": [
+    {
+      "movie": "ssmb",
+      "Director": "ssshs",
+      "id": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "todo": [
+    {
+      "id": 1,
+      "movie": "hi",
+      "actor": " ,d ddd"
+    },
+    {
+      "movie": "",
+      "actor": "",
+      "id": 2
+    },
+    {
+      "movie": "",
+      "actor": "",
+      "id": 3
+    },
+    {
+      "movie": "",
+      "actor": "",
+      "id": 4
+    },
+    {
+      "movie": "",
+      "actor": "",
+      "id": 5
+    }
+  ]
+}

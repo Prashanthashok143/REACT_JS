@@ -1,0 +1,28 @@
+body{
+    background-color:gray;
+}
+.TodoContainer{
+    height: 200px;
+ position: relative;
+  left: 500px;
+}
+
+.todoitems{
+    position: relative;
+    top: 10px;
+    right: 300px;
+   
+    
+}
+table {
+    border-collapse: separate;
+    border-spacing: 10px;
+    /* width: 420px;  */
+    
+ }
+  th, td {
+    border: 1px ridge #bbb;
+    padding: 8px;
+    text-align: center;
+    width: 130px;
+  } 
