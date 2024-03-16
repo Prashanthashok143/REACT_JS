@@ -1,36 +1,48 @@
 import React, { useContext } from "react";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { PagesValues } from "../Render";
 const Layout = () => {
-  const {auth}=useContext(PagesValues)
+  const navigate=useNavigate();
+  const {auth,setAuth}=useContext(PagesValues)
+  const LogOut=()=>{
+    if(auth){
+      localStorage.clear("username")
+      setAuth(false)
+    }
+    navigate("/login")
+  }
   return (
     <div>
+<nav className="navbar navbar-expand-lg bg-body-tertiary">
+  <div className="container-fluid">
       
-      <li>
+    
             <Link to="/">Home</Link>
-          </li>
+        
       {
         auth && (
           <>
-           <li>
+       
             <Link to="/todo">TODO</Link>
-          </li>
+          
          
-          <li>
+          
             <Link to="/contact">Contact</Link>
-          </li>
-          <li>
+          
+          
             <Link to="/about">About</Link>
-          </li>
+          
           </>
         )
       }
-         
-          <li>
-            <Link to="/login">Login</Link>
-          </li>
+      <Link to="/login" onClick={LogOut}>{
+              !auth ? "Login" :"Logout"
+            }</Link>
+              <Link to="/signup" onClick={LogOut}>Signup</Link>
+          
     
-
+</div>
+</nav>
  
     </div>
   )

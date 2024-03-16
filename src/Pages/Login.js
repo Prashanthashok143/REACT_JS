@@ -20,7 +20,7 @@ const Login=()=>
   
     else {
         setErrormsg("")
-        // window.location.pathname="/"; // insted of this,we us navigate
+        // window.location.pathname="/"; // insted of this,we use navigate
     navigate("/contact",{state:{email:email}})
     localStorage.setItem("username",email)
     setAuth(true)

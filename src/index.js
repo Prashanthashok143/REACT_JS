@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import "bootstrap/dist/css/bootstrap.min.css";
+import App from './App';
+import { Provider } from 'react-redux';
+import store from './Redux ToolKit/Store';
 // import ComponentA from './Context/ComponentA';
 // import Myserver from './Myserver';
 // import Myserveredit from './Myserveredit';
@@ -26,18 +29,19 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import Contact from "./Pages/Contact";
 // import Layout from './Pages/Layout';
 // import Nopage from "./Pages/Nopage";
-import Render from './Render';
 
+// import Render from './Render';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <div>
 
-   
-<Render/>
+{/* <Render/> */}
 
-
+<Provider store={store}>
+<App/>
+</Provider>
  
     </div>
 

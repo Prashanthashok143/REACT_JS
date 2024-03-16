@@ -8,10 +8,11 @@
   ],
   "comments": [
     {
-      "movie": "ssmb",
-      "Director": "ssshs",
-      "id": 1
-    }
+  
+        "id": 1,
+        "movie": "p",
+        "director": "Shangarapu"
+      }
   ],
   "profile": {
     "name": "typicode"
@@ -23,24 +24,14 @@
       "actor": " ,d ddd"
     },
     {
-      "movie": "",
-      "actor": "",
+      "movie": "hello",
+      "actor": "hii",
       "id": 2
     },
     {
-      "movie": "",
-      "actor": "",
+      "movie": "GK",
+      "actor": "MB",
       "id": 3
-    },
-    {
-      "movie": "",
-      "actor": "",
-      "id": 4
-    },
-    {
-      "movie": "",
-      "actor": "",
-      "id": 5
     }
   ]
 }

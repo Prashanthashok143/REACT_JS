@@ -8,11 +8,14 @@ import Layout from './Pages/Layout';
 import Nopage from "./Pages/Nopage";
 import Login from './Pages/Login';
 import Home from './Pages/Home';
+import Signup from './Pages/Signup';
 export const PagesValues=createContext(null)
 
 const Render = () => {
-    const [auth,setAuth]=useState(false);
+    const LoggIn=localStorage.getItem("username")!==null;
+    const [auth,setAuth]=useState(LoggIn ?? false);
     const valuesPassing={auth,setAuth}
+    console.log(valuesPassing)
   return (
     <div>
     <PagesValues.Provider value={valuesPassing}>
@@ -32,6 +35,7 @@ const Render = () => {
     )
 }
         <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="*" element={<Nopage />} /> 
    </Routes>
    </BrowserRouter>    
@@ -40,4 +44,4 @@ const Render = () => {
   )
 }
 
-export default Render
+export default Render;
